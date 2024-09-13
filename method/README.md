@@ -56,7 +56,6 @@ This equation indicates how the nearest landfall distance (dependent variable) c
 | **OLS Regression Results**|                               
 |---------------------------|-----------------|-------------|
 |                           |**Coefficient** | **p-value** |
-|---------------------------|-----------------|-------------|
 | **Intercept**              | -6595.14        | < 0.001     |
 | **Max Wind Speed**         | 2.19            | < 0.001     |
 | **Min Pressure**           | 7.26            | < 0.001     |
