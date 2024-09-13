@@ -48,8 +48,8 @@ This equation indicates how the nearest landfall distance (dependent variable) c
 
 # Statistical Tests Results
 
-| **Results**               |                                 |
-|---------------------------|---------------------------------|
+ **Results**                                                
+
 | Pearson Correlation        | -0.920                         |
 | T-test p-value             | 1.28 × 10<sup>−44</sup>         |
 
