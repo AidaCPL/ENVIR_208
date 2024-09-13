@@ -48,12 +48,14 @@ This equation indicates how the nearest landfall distance (dependent variable) c
 
 # Statistical Tests Results
 
-| **Results**               |                                 |
+|                        **Results**                                                 |
 |---------------------------|---------------------------------|
 | **Pearson Correlation**    | -0.920                         |
-| **T-test p-value**         | 1.28 × 10<sup>−44</sup>         |
-
-| **OLS Regression Results** | **Coefficient** | **p-value** |
+| **T-test p-value**         | 1.28 × 10<sup>−44</sup>        
+|---------------------------|-----------------|-------------|
+|                    **OLS Regression Results**             |
+|-----------------------------------------------------------|
+|                           | **Coefficient** | **p-value** |
 |---------------------------|-----------------|-------------|
 | **Intercept**              | -6595.14        | < 0.001     |
 | **Max Wind Speed**         | 2.19            | < 0.001     |
@@ -63,4 +65,4 @@ This equation indicates how the nearest landfall distance (dependent variable) c
 | **F-statistic**            | 126.1           |             |
 | **Prob (F-statistic)**     | < 0.001         |             |
 
-_Table 1: Statistical tests results_
+
