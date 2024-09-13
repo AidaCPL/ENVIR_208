@@ -33,6 +33,8 @@ The second feature engineered in the process involves calculating the intensific
 
 In the exploratory data analysis, various visualizations were created to gain insights into the hurricane dataset.
 
+<img src="figure2a.png" alt="figure2" width="600"/>
+<img src="figure2b.png" alt="figure2" width="600"/>
 
 *Figure 2.1 A bar plots illustrating the distribution of different statuses of the hurricane system (left) and the distribution of hurricanes across different Saffir-Simpson storm categories (right).*
 
@@ -40,9 +42,16 @@ As the Saffir-Simpson category was calculated using the maximum sustained wind s
 
 Figures 2.2 evidence an overall increase in the trend of hurricane frequency, although fluctuating though the years, the trend appears to be increasing above the mean frequency. However, it also notes the seasonality of hurricanes, namely, the hurricane season being around September with 8000 storms recorded in the dataset (relevant to mention that it is not 8000 unique storms). Figure 2.4 also shows an important increase of landfall events in the year 2020. It also makes evident the lack of records of landfall events before the 1980s, recording Hurricane Barry (August 1983) as the first landfall event. 
 
+<img src="figure2_2a.png" alt="figure2" width="600"/>
+<img src="figure2_2b.png" alt="figure2" width="600"/>
+
 *Figure 2.2: Line plot showing the frequency of hurricanes per year, and the mean frequency. Bar plot illustrating the frequency of hurricanes per month.*
 
+<img src="figure2_3.png" alt="figure2" width="600"/>
+
 *Figure 2.3: Time series plot of variation in maximum sustained wind speeds over time.*
+
+<img src="figure2_4.png" alt="figure2" width="600"/>
 
 *Figure 2.4: Time series plot to visualize landfall frequency yearly, with line of the mean number of landfall events.*
 

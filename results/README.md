@@ -16,6 +16,8 @@ Similar to the logistic regression and decision tree models, the random forest m
 The primary concern across all models is the significant class imbalance. The dataset contains a disproportionate number of instances for the negative class compared to the positive class. With only 492 instances of the positive class compared to 19,146 instances of the negative class, the models are biased towards predicting negative instances. This imbalance severely affects the models’ ability to generalize and accurately predict positive instances.
 The feature importance analysis conducted on the random forest model reveals insights into the most influential features for prediction. Figure 3 shows the overwhelming importance that longitude and latitude have on predicting the likelihood of landfall. This makes sense as the closer the tropical cyclone is to land the more likely it is to reach land at some point in its trajectory. Also, these are hurricanes solely in the Atlantic Basin, so the movement patterns are similar, as are the landfall locations.
 
+<img src="figure3.png" alt="figure3" width="600"/>
+
 *Figure 3: Feature importance bar plot from random forest model*
 
 In summary, while the models demonstrate good accuracy, the score is misleading as it only scores high for negative classes, showing its inability to predict positive instances effectively due to the class imbalance.
@@ -27,10 +29,14 @@ In other to effectively handle the class imbalance, two of the engineered featur
 ### Logistic Regression Model with Engineered Features:
 The logistic regression model with engineered features achieved an accuracy of 99.77%. This indicates that the model correctly predicts 99.77% of the instances in the dataset. Moreover, the precision, recall, and F1-score for both classes (False and True) are very high, suggesting excellent performance in identifying both classes. Additionally, ROC curve was plotted to visualize the models’ performance in terms of true positive rate versus false positive rate, see Figure 4.1.
 
+<img src="figure4_1.png" alt="figure4" width="600"/>
+
 *Figure 4.1: ROC for Logistic Regression Model*
 
 ### Decision Tree Model with Engineered Features:
 Similar to the logistic regression model, the decision tree model with engineered features demonstrates significant improvement, with an accuracy of 99.69%. The precision, recall, and F1-score for both classes have improved compared to the previous model, indicating better performance in correctly identifying both classes. After hyperparameter tuning, the decision tree model's accuracy remains high at 99.77%. The precision, recall, and F1-score for both classes also remain consistent with the previous model, demonstrating the robustness of the model's performance with engineered features.
+
+<img src="figure4_2.png" alt="figure4" width="600"/>
 
 *Figure 4.2: ROC for Decision Tree Model*
 
@@ -38,18 +44,26 @@ Similar to the logistic regression model, the decision tree model with engineere
 
 The random forest model with engineered features achieved an accuracy of 99.77%, like the logistic regression and decision tree models. However, the precision, recall, and F1-score for the positive class (True) have substantially improved compared to the previous model, indicating enhanced performance in correctly identifying positive instances.
 
+<img src="figure4_3.png" alt="figure4" width="600"/>
+
 *Figure 4.3: ROC for Random Forest Model*
 
 The feature importance analysis reveals that the engineered feature ‘Nearest_landfall_distance’ holds significant importance, contributing overwhelmingly to the model’s predictive power. This suggests that the proximity to landfall locations plays a crucial role in determining the occurrence of landfall. 
 
 Finally, the learning curves were plotted for each of the models. These learning curves provide valuable insights into the performance and behavior of each model as the training dataset size increases. In the case of logistic regression, the training score remains consistently high, indicating that the model can effectively fit the training data, see Figure 5.1. However, the cross-validation score increases initially as more data is added, suggesting that the model benefits from additional training examples, likely reducing overfitting. This pattern indicates that logistic regression is robust and benefits from more data, making it a strong candidate for generalization to unseen data.
 
+<img src="figure5_1.png" alt="figure5" width="600"/>
+
 *Figure 5.1: Learning Curve of the Logistic Regression Model*
 
 For the decision tree model, the perfect training score suggests overfitting, as the model fits the training data perfectly but struggles to generalize to unseen data, as indicated by the lower cross-validation score, see Figure 5.2. Despite efforts to tune hyperparameters, the decision tree model’s inability to consistently improve validation performance with more data suggests limitations in its ability to capture complex relationships effectively.
 
+<img src="figure5_2.png" alt="figure5" width="600"/>
+
 *Figure 5.2: Learning Curve of the Decision Tree*
 
 Similarly, the random forest model exhibits overfitting, as evidenced by the perfect training score and the initially lower cross-validation score, see Figure 5.3. Although the model's performance stabilizes it remains lower than the training score. Considering the occasional fluctuations, the decision tree model consistency outperforms the random forest model in cross-validation. 
+
+<img src="figure5_3.png" alt="figure5" width="600"/>
 
 *Figure 5.3: Learning Curve of the Random Forest*
