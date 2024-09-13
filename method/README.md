@@ -6,6 +6,10 @@ The following page shows the method and the workflow of the research on the pred
 
 Summary statistics and visualizations were generated to explore the distribution of null values in the dataset. Frequency distributions of months were visualized using bar plots and time series analysis techniques. The time series depicted in Figure 1 allows us to understand the proportion of missing values in ‘min_pressure’ and ‘wind_radii’ columns by year. For instance, as explained in the dataset description, there is no data on wind radii before 2004 and the minimum pressure recordings fluctuated dramatically until 1980. 
 
+<img src="figure1a.png" alt="figure1" width="600"/>
+<img src="figure1b.png" alt="figure1" width="600"/>
+
+
 *Figure 1 Proportion on null values per year. The graph on the left shows the period from 1850-2022, the graph on the right is the filtered dataset from 1971 to 2022.*
 
 Initially, the missing values for the ‘min_pressure’ variable were relatively low, comprising only approximately 3% of the data. Thus, these missing records were simply dropped from the dataset.
