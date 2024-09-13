@@ -8,12 +8,14 @@ The logistic regression model achieved an accuracy of 0.9763, or 97.6%. While th
 
 ### Decision Tree Model:
 The decision tree model attained an accuracy of 0.9692. However, a deeper analysis of the classification report reveals a similar issue as the logistic regression model. While the model demonstrates strong performance in predicting instances of the negative class (False), with high precision, recall, and F1-score, it struggles to identify instances of the positive class (True). The precision, recall, and F1-score for the positive class are significantly lower, indicating that the model's predictive capabilities are limited. 
+
 After hyperparameter tuning, the decision tree model's accuracy slightly improved to 0.9705. However, the fundamental issue persists. The model exhibits strong performance in predicting negative instances but remains ineffective at capturing positive instances. Despite optimizing the model's parameters, the imbalance in class distribution continues to impact its performance.
 
 ### Random Forest Model after Hyperparameter Tuning:
 Similar to the logistic regression and decision tree models, the random forest model faces challenges in predicting positive instances. Despite achieving an accuracy of 0.9679, the model's precision, recall, and F1-score for the positive class are all 0, indicating a failure to correctly identify positive instances. Once again, the model excels in predicting negative instances but struggles with positive instances.
 
 The primary concern across all models is the significant class imbalance. The dataset contains a disproportionate number of instances for the negative class compared to the positive class. With only 492 instances of the positive class compared to 19,146 instances of the negative class, the models are biased towards predicting negative instances. This imbalance severely affects the models’ ability to generalize and accurately predict positive instances.
+
 The feature importance analysis conducted on the random forest model reveals insights into the most influential features for prediction. Figure 3 shows the overwhelming importance that longitude and latitude have on predicting the likelihood of landfall. This makes sense as the closer the tropical cyclone is to land the more likely it is to reach land at some point in its trajectory. Also, these are hurricanes solely in the Atlantic Basin, so the movement patterns are similar, as are the landfall locations.
 
 <img src="figure3.png" alt="figure3" width="600"/>
