@@ -53,7 +53,7 @@ This equation indicates how the nearest landfall distance (dependent variable) c
 | **Pearson Correlation**    | -0.920                         |
 | **T-test p-value**         | 1.28 × 10<sup>−44</sup>         |
 
-| **OLS Regression Results**|                               |
+| **OLS Regression Results**|                               
 |---------------------------|-----------------|-------------|
 |                           |**Coefficient** | **p-value** |
 |---------------------------|-----------------|-------------|
